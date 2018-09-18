@@ -29,9 +29,9 @@ curl -s -XGET http://localhost:9200/simple-index/data/_search?pretty=true
 
 ### Using the simulation API
 
-To use the pipeline simulation API:
+_This shows you how to use the pipeline simulation API_
 
-1. Post a message to the simulation API:
+1. Post a JSON document with the same pipeline used above and an example document to the simulation API:
 ```
 curl -H 'Content-Type: application/json' -XPOST http://localhost:9200/_ingest/pipeline/_simulate?pretty=true -d @simulate-simple-message.json
 ```
