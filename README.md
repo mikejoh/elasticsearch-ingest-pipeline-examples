@@ -12,7 +12,7 @@ All of the examples in this repository can easily be translated and used with th
 
 ## Examples
 
-* [Simple pipeline example](simple-example.md) (uses the `remove` processor)
+* [Simple pipeline example](elastic-ingest-pipeline-examples/examples/simple-pipeline/simple-example.md) (uses the [`remove`](https://www.elastic.co/guide/en/elasticsearch/reference/6.4/remove-processor.html) processor)
 * Handling errors in a pipeline
 * Using the simulation API
 * Advanced pipeline example (uses a combination of processors)
