@@ -10,6 +10,10 @@ Besides testing the pipelines with the simulation API it's easy to handle errors
 
 All of the examples in this repository can easily be translated and used with the Dev Tool in Kibana.
 
+## Notes
+
+* Tested on Elasticsearch and Kibana version `6.4`
+
 ## Examples
 
 * [Simple pipeline example](https://github.com/mikejoh/elastic-ingest-pipeline-examples/blob/master/examples/simple-pipeline/simple-example.md) (uses the [`remove`](https://www.elastic.co/guide/en/elasticsearch/reference/6.4/remove-processor.html) processor)
