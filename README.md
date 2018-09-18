@@ -10,6 +10,16 @@ Besides testing the pipelines with the simulation API it's easy to handle errors
 
 All of the examples in this repository can easily be translated and used with the Dev Tool in Kibana.
 
+## Run Elasticsearch and Kibana in Docker
+
+To run the examples in this repository as-is:
+
+1. Run the `run_elastic.sh` script
+```
+bash run_elastic.sh
+```
+2. You should now be able to reach Elasticsearch on `http://localhost:9200` and Kibana on `http://localhost:5601`
+
 ## Notes
 
 * Tested on Elasticsearch and Kibana version `6.4`
