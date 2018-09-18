@@ -1,0 +1,5 @@
+{
+    "type" : "simple",
+    "message" : "This is a simple message",
+    "random" : "Scrap this field"
+}

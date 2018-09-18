@@ -1,0 +1,10 @@
+{
+    "description": "Removes a specific field before indexing",
+    "processors": [ 
+        {
+            "remove": {
+                "field": "random"
+            }
+        }
+    ]
+}
