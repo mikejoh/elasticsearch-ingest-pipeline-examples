@@ -1,0 +1,23 @@
+{
+  "pipeline" : {
+    "description": "Removes a specific field before indexing",
+    "processors": [ 
+      {
+        "remove": {
+          "field": "random"
+        }
+      }
+    ]
+  },
+  "docs": [
+    {
+      "_index": "simple-index",
+      "_type": "data",
+      "_source": {
+        "type" : "simple",
+        "message" : "This is a simple message",
+        "random" : "Scrap this field"
+      }
+    }
+  ]
+}

@@ -2,9 +2,9 @@
 
 This examples shows how to use the `remove` processor in a simple pipeline.
 
-### How-to run
-
 _Run the commands below from within this directory._
+
+### Step-by-step
 
 1. Send a simple message to Elasticsearch (creates an index called `simple-index` with `data` as the type):
 ```
@@ -26,3 +26,13 @@ curl -s -H 'Content-Type: application/json' -XPOST http://localhost:9200/simple-
 ```
 curl -s -XGET http://localhost:9200/simple-index/data/_search?pretty=true
 ```
+
+### Using the simulation API
+
+To use the pipeline simulation API:
+
+1. Post a message to the simulation API:
+```
+curl -H 'Content-Type: application/json' -XPOST http://localhost:9200/_ingest/pipeline/_simulate?pretty=true -d @simulate-simple-message.json
+```
+2. If you compare the document in the response to the one sent in the `simulate-simple-message.json` you'll see that the field `random` have been removed.
